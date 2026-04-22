@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MiniNet Dashboard</title>
+  <script>
+    window.onerror = function(msg, src, line) {
+      var d = document.getElementById('js-error-banner');
+      if (!d) { d = document.createElement('div'); d.id = 'js-error-banner';
+        d.style.cssText = 'position:fixed;top:0;left:0;right:0;background:#f85149;color:#fff;padding:8px 14px;font-family:monospace;font-size:13px;z-index:9999;white-space:pre-wrap';
+        document.body.appendChild(d); }
+      d.textContent += '❌ ' + msg + ' (' + src + ':' + line + ')\n';
+      return false;
+    };
+  </script>
+  <script src="vis-network.min.js" onerror="window.onerror('vis-network.min.js failed to load','vis-network.min.js',0)"></script>
+  <script src="signalr.min.js"     onerror="window.onerror('signalr.min.js failed to load','signalr.min.js',0)"></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>MiniNet Dashboard</h1>
+    <div id="connection-status" class="status disconnected">Connecting…</div>
+  </header>
+
+  <div id="controls">
+    <div class="ctrl-group">
+      <span class="ctrl-label">Router</span>
+      <input id="inp-router" type="text" placeholder="e.g. R1" maxlength="20" />
+      <button onclick="addRouter()">＋ Add Router</button>
+    </div>
+
+    <div class="ctrl-divider"></div>
+
+    <div class="ctrl-group">
+      <span class="ctrl-label">Switch</span>
+      <input id="inp-sw" type="text" placeholder="e.g. SW1" maxlength="20" />
+      <select id="inp-sw-router">
+        <option value="">— Router (optional) —</option>
+      </select>
+      <button onclick="addSwitch()">＋ Add Switch</button>
+    </div>
+
+    <div class="ctrl-divider"></div>
+
+    <div class="ctrl-group">
+      <span class="ctrl-label">Device</span>
+      <input id="inp-dev-name" type="text" placeholder="Name" maxlength="20" />
+      <select id="inp-dev-sw">
+        <option value="">— Switch —</option>
+      </select>
+      <button onclick="addDevice()">＋ Add Device</button>
+    </div>
+  </div>
+
+  <main>
+    <section id="topology-panel">
+      <h2>Network Topology</h2>
+      <div id="topology-graph"></div>
+    </section>
+
+    <section id="log-panel">
+      <h2>
+        Live Events
+        <button id="clear-btn" onclick="clearLog()">Clear</button>
+      </h2>
+      <div id="event-log"></div>
+    </section>
+  </main>
+
+  <footer id="tables-panel">
+    <div id="footer-tabs">
+      <button class="footer-tab active" onclick="showTab('devices')">Devices</button>
+      <button class="footer-tab" onclick="showTab('history')">History</button>
+    </div>
+
+    <div id="tab-devices">
+      <div id="tables-content">
+        <p class="empty-tables">Connect devices to see tables.</p>
+      </div>
+    </div>
+
+    <div id="tab-history" style="display:none">
+      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:6px">
+        <span style="font-size:11px;color:var(--text-muted);text-transform:uppercase;font-weight:600">Event History</span>
+        <button id="clear-btn" onclick="loadHistory()">Refresh</button>
+      </div>
+      <div id="history-content"><p class="empty-tables">Click Refresh to load history.</p></div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

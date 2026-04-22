@@ -1,0 +1,14 @@
+/Users/mergeamihai/IdeaProjects/MiniNet/MiniNet/bin/Debug/net8.0/MiniNet
+/Users/mergeamihai/IdeaProjects/MiniNet/MiniNet/bin/Debug/net8.0/MiniNet.deps.json
+/Users/mergeamihai/IdeaProjects/MiniNet/MiniNet/bin/Debug/net8.0/MiniNet.runtimeconfig.json
+/Users/mergeamihai/IdeaProjects/MiniNet/MiniNet/bin/Debug/net8.0/MiniNet.dll
+/Users/mergeamihai/IdeaProjects/MiniNet/MiniNet/bin/Debug/net8.0/MiniNet.pdb
+/Users/mergeamihai/IdeaProjects/MiniNet/MiniNet/obj/Debug/net8.0/MiniNet.GeneratedMSBuildEditorConfig.editorconfig
+/Users/mergeamihai/IdeaProjects/MiniNet/MiniNet/obj/Debug/net8.0/MiniNet.AssemblyInfoInputs.cache
+/Users/mergeamihai/IdeaProjects/MiniNet/MiniNet/obj/Debug/net8.0/MiniNet.AssemblyInfo.cs
+/Users/mergeamihai/IdeaProjects/MiniNet/MiniNet/obj/Debug/net8.0/MiniNet.csproj.CoreCompileInputs.cache
+/Users/mergeamihai/IdeaProjects/MiniNet/MiniNet/obj/Debug/net8.0/MiniNet.dll
+/Users/mergeamihai/IdeaProjects/MiniNet/MiniNet/obj/Debug/net8.0/refint/MiniNet.dll
+/Users/mergeamihai/IdeaProjects/MiniNet/MiniNet/obj/Debug/net8.0/MiniNet.pdb
+/Users/mergeamihai/IdeaProjects/MiniNet/MiniNet/obj/Debug/net8.0/MiniNet.genruntimeconfig.cache
+/Users/mergeamihai/IdeaProjects/MiniNet/MiniNet/obj/Debug/net8.0/ref/MiniNet.dll

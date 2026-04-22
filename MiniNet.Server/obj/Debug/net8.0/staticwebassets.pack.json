@@ -1,0 +1,41 @@
+{
+  "Files": [
+    {
+      "Id": "/Users/mergeamihai/IdeaProjects/MiniNet/MiniNet.Server/wwwroot/app.js",
+      "PackagePath": "staticwebassets/app.js"
+    },
+    {
+      "Id": "/Users/mergeamihai/IdeaProjects/MiniNet/MiniNet.Server/wwwroot/index.html",
+      "PackagePath": "staticwebassets/index.html"
+    },
+    {
+      "Id": "/Users/mergeamihai/IdeaProjects/MiniNet/MiniNet.Server/wwwroot/signalr.min.js",
+      "PackagePath": "staticwebassets/signalr.min.js"
+    },
+    {
+      "Id": "/Users/mergeamihai/IdeaProjects/MiniNet/MiniNet.Server/wwwroot/style.css",
+      "PackagePath": "staticwebassets/style.css"
+    },
+    {
+      "Id": "/Users/mergeamihai/IdeaProjects/MiniNet/MiniNet.Server/wwwroot/vis-network.min.js",
+      "PackagePath": "staticwebassets/vis-network.min.js"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.MiniNet.Server.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.build.MiniNet.Server.props",
+      "PackagePath": "build\\MiniNet.Server.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildMultiTargeting.MiniNet.Server.props",
+      "PackagePath": "buildMultiTargeting\\MiniNet.Server.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildTransitive.MiniNet.Server.props",
+      "PackagePath": "buildTransitive\\MiniNet.Server.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
